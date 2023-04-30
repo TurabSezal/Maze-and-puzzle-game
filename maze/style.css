@@ -1,0 +1,54 @@
+body {
+  margin-left: 380px;
+  background-color: #5d0f5d;
+}
+canvas {
+  border: 1px solid white;
+}
+button {
+  margin-bottom: 2px;
+  background-color: black;
+  transition-duration: 0.1s;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+
+button:hover {
+  background-color: #f943f9;
+  color: white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+}
+.logo {
+  font-size: 25px;
+}
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: black;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+@media (min-width: 768px) {
+  .Puzzle__Container {
+    width: 300px;
+  }
+}

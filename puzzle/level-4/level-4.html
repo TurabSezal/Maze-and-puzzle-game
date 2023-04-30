@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Puzzle</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="puzzle.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Puzzle</div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li><a href="../../index.html">Ana Menü</a></li>
+          <li><a href="/puzzle/level-1/level-1.html">Level 1</a></li>
+          <li><a href="/puzzle/level-2/level-2.html">Level 2</a></li>
+          <li><a href="/puzzle/level-3/level-3.html">Level 3</a></li>
+          <li><a href="/puzzle/level-4/level-4.html">Level 4</a></li>
+        </div>
+      </ul>
+    </nav>
+    <main class="Puzzle">
+      <img class="Puzzle__Info" src="images/info.jpg" />
+      <div class="Puzzle__Container">
+        <h1 class="Puzzle__Title">Turns: <span id="Turns">0</span></h1>
+        <div class="Puzzle__Board" id="Board"></div>
+      </div>
+      <div class="Puzzle__Container">
+        <h1 class="Puzzle__Title">Pieces</h1>
+        <div class="Puzzle__Pieces" id="Pieces"></div>
+      </div>
+    </main>
+    <!-- JS -->
+    <script type="text/javascript" src="puzzle.js"></script>
+  </body>
+</html>

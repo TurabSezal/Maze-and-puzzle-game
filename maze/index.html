@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maze Mouse Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Puzzle</div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li><a onclick="restart()">Yeniden Başlat</a></li>
+          <li><a href="../index.html">Ana Menü</a></li>
+        </div>
+      </ul>
+    </nav>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <img id="mouse" src="rat.png" style="display: none" />
+    <img id="cheese" src="food.png" style="display: none" />
+    <script src="maze-mouse.js"></script>
+  </body>
+</html>
