@@ -1,0 +1,44 @@
+body {
+  background-color: #5d0f5d;
+}
+
+#gameCanvas {
+  display: block;
+  margin: auto;
+  border: 1px solid white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  background-color: #5d0f5d;
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+}
+.logo {
+  font-size: 25px;
+}
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: black;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+@media (min-width: 768px) {
+  .Puzzle__Container {
+    width: 300px;
+  }
+}
