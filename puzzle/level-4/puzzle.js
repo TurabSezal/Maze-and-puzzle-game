@@ -30,7 +30,7 @@ window.addEventListener('load', function () {
     if (currentPiece.src.includes('blank')) {
       error = true;
     }
-    if (turns === 35) {
+    if (turns === 30) {
       alert('You Lose');
       turns = 0;
       document.getElementById('Turns').innerText = turns;
