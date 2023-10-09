@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minefield</title>
+    <link />
+    <link rel="stylesheet" href="mine.css">  </link>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Minefield</div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li><a href="../../index.html">Ana Menü</a></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="game" id="cnt"></div>
+    <div class="dialogContainter" id="dlg-bgk">
+      <div class="dialog">
+        <div id="msg">Yeni Oyun</div>
+        <br />
+        <label
+          >Genişlik:<input
+            type="number"
+            id="txtWidth"
+            value="8"
+            min="8"
+            max="100" /></label
+        ><br />
+        <label
+          >Yükseklik:<input
+            type="number"
+            id="txtHeight"
+            value="8"
+            min="8"
+            max="100" /></label
+        ><br />
+        <label>Mayın:<input type="number" id="txtMines" value="10" /></label
+        ><br />
+        <input type="button" value="Tamam" id="btnOK" />
+      </div>
+    </div>
+  </body>
+      <script src="mine.js"></script>
+</html>

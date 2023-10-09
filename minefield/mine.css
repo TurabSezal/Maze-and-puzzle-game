@@ -1,0 +1,141 @@
+html {
+  background: radial-gradient(white, white, #ccd);
+  background-size: cover;
+}
+body {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  user-select: none;
+  cursor: arrow;
+  /*position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+}
+.game {
+  display: inline-block;
+  font-size: calc(70vh / 8);
+  line-height: 1em;
+}
+.game div {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 0.2em;
+  border-width: 0.04em;
+  border-style: solid;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0;
+  transition: background-color 0.5s, background-size 0.2s;
+}
+.cell {
+  background-color: #aaa;
+  border-color: #666;
+  background-size: 0.9em 0px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5d/White_flag_icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cell:hover {
+  background-color: #999;
+}
+.cell[flag] {
+  background-size: 0.9em 0.9em;
+  background-color: #844;
+}
+.empty {
+  border-color: #aaa;
+  background-color: #eee;
+}
+.mine {
+  border-color: #aaa;
+  background-color: #a00;
+  background-size: 0.9em 0.9em;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/92/Font_Awesome_5_solid_bomb.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dialogContainter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.dialog {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+.dialog label {
+  display: block;
+  width: 150px;
+}
+
+.dialog label input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 60px;
+  float: right;
+  text-align: right;
+}
+
+.dialog input[type='button'] {
+  width: 50%;
+  background-color: #aaa;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dialog input[type='button']:hover {
+  background-color: #999;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  background-color: #5d0f5d;
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+}
+.logo {
+  font-size: 25px;
+}
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: black;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+@media (min-width: 768px) {
+  .Puzzle__Container {
+    width: 300px;
+  }
+}
